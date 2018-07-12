@@ -6,92 +6,128 @@
     <meta name="viewport" content="width=device-width,user-scalable=no">
     <meta name="description" content="Curriculum Vitae">
     <meta name="author" content="Giovanny Moreno Yali">
-    <meta name="keywords" content="curriculum,diseño, web, html5,tarea,vitae,hoja,vida">
-    <title> Educacion </title>
+    <meta name="keywords" content="curriculum,diseño, educacipon, web, html5,tarea,vitae,hoja,vida">
+    <title> Educación - Giovanny Moreno Yali </title>
 </head>
 
 <body>
+    <svg id="logo" width="1400px" height="300px" viewbox="50 140 1200 250">
+        <image width="400px" height="600px" xlink:href="../imagenes/logogmy.svg"></image>
+    </svg>
+
     <header>
-        <h1> Curriculum Vitae  </h1>
+        <h1> Curriculum Vitae </h1>
     </header>
 
-    <h3> Datos personales </h3>
+    <h2> Datos personales </h2>
     <p>
-        <ul>
-            <li> Nombre: Giovanny </li>
-            <li> Apellidos: Moreno Yali </li>
-            <li> Fecha de nacimiento: 14 enero 1988 </li>
-            <li> Lugar de nacimiento: Medellín-Antioquia</li>
-        </ul>
+        <h3> Nombre: Giovanny </h3>
+        <h3> Apellidos: Moreno Yali </h3>
+        <h3> Fecha de nacimiento: 14 enero 1988 </h3>
+        <h3> Lugar de nacimiento: Medellín-Antioquia </h3>
     </p>
 
     <nav>
-        |
         <a href="../index.html"> Inicio </a>|
         <a href="experiencia.html">Experiencia</a>|
     </nav>
-    <p>
-        <h2> Educacion </h2>
 
-        <table border="1" cellspacing="1" cellpadding="10">
-            <tr>
-                <th> Año </th>
-                <th> Institucion </th>
-                <th> lugar </th>
-                <th> ¿Culmino? </th>
-            </tr>
-            <tr>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-                <td> </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-            </tr>
-        </table>
-    </p>
+    <section>
+        <article>
+            <p>
+                <h2> Educación </h2>
+                <table border="1" cellspacing="0" cellpadding="10" style="text-align:center">
+                    <thead>
+                        <tr>
+                            <th> Año </th>
+                            <th> Institución </th>
+                            <th> lugar </th>
+                            <th> ¿Culminó? </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td> 1999-2004 </td>
+                            <td> Institución educativa Inem José Félix de Restrepo </td>
+                            <td> Medellín - Antioquia </td>
+                            <td> si </td>
+                        </tr>
+                        <tr>
+                            <td> 2005-2006 </td>
+                            <td> CEIDA </td>
+                            <td> Itagüí - Antioquia </td>
+                            <td> si </td>
+                        </tr>
+                        <tr>
+                            <td> 2015-2017 </td>
+                            <td> CESDE </td>
+                            <td> Medellín - Medellín-Antioquia</td>
+                            <td> si </td>
+                        </tr>
+                        <tr>
+                            <td> 2017- Actualmente </td>
+                            <td> Institución Universitaria Pascual Bravo </td>
+                            <td> Medellín - Medellín-Antioquia </td>
+                            <td> Actualmente </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </p>
 
-    <p>
-        <h2> Agregar Estudios </h2>
+            <h2> Agregar Estudios </h2>
 
-        <form>
-            <lable for="year"> Año: </lable>
-            <select>
-                <option> 2018 </option>
-                <option> 2017 </option>
-                <option> 2016 </option>
-                <option> 2016 </option>
-                <option> 2015 </option>
-                <option> 2014 </option>
-            </select>
-            <br/>
-            <br/>
+            <form name="estudios">
+                <lable for="año"> Año: </lable>
+                <select name="año" id="año">
+                    <option> 2018 </option>
+                    <option> 2017 </option>
+                    <option> 2016 </option>
+                    <option> 2015 </option>
+                    <option> 2014 </option>
+                    <option> 2013 </option>
+                    <option> 2012 </option>
+                    <option> 2011 </option>
+                    <option> 2010 </option>
+                    <option> 2009 </option>
+                    <option> 2008 </option>
+                    <option> 2007 </option>
+                    <option> 2006 </option>
+                    <option> 2005 </option>
+                    <option> 2004 </option>
+                    <option> 2003 </option>
+                    <option> 2002 </option>
+                    <option> 2001 </option>
+                    <option> 2000 </option>
+                </select>
 
-            <label for="institucion"> Institucion: </label>
-            <textarea rows="1" cols="26"></textarea>
-            <br/>
+                <p>
+                    <label for="institucion"> Institucion: </label>
+                    <input type="text" name="institucion" id="Institucion" placeholder="NextU" size="28" required autocomplete="on">
+                </p>
 
-            <label for "lugar">Lugar:</label>
-            <textarea rows="2" cols="30"></textarea>
-            <br/>
-            <br/>
+                <P>
+                    <label for "lugar">Lugar:</label>
+                    <textarea name="lugar" id="lugar" rows="2" cols="34" placeholder="Medellín-Antioquia" required></textarea>
+                </P>
 
-            <input type="submit" value="Enviar">
-        </form>
-    </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                </p>
+            </form>
 
-    <footer>
-        <ur>
-        <li> email: giiomy5@gmail.com </li>
-         <li> cel: 3178018439 </li>
-         <li> instagram: giiomy5 </li>
-</ur>
-    </footer>
+        </article>
+    </section>
+
+    <a href="#logo"> volver al inicio </a>
 
 </body>
+
+<footer>
+    <p>
+        <a href="https://web.facebook.com/giio.yali" target="blank"> facebook </a>|
+        <a href="https://www.instagram.com/giiomy/" target="blank"> instagram </a>|
+        <a href="mailto:giiomy5@gmail.com"> contacto </a>| celular: 3178018439
+    </p>
+</footer>
 
 </html>
